@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: cursive, sans-serif;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.btns-container{
+    width: 25vw;
+    max-width: 250px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 25px;
+}
+.bt{
+    height: 50px;
+    background-color: hsl(210, 100%, 77%);
+    border: 1px solid rgb(106, 150, 165);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px hsl(0, 0%, 24%);
+}
+.bt:hover{
+    cursor: pointer;
+    background-color: hsl(210, 100%, 83%);
+    box-shadow: 5px 5px 10px hsl(0, 0%, 34%);
+    transition: all ease .5s;
+}
+.bt{    text-decoration: none;  }
+.bt:hover{  text-decoration: none;  }
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a button{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: cursive, sans-serif;
+
+    cursor: pointer;
+}
+.introduction{
+    width: 80vw;
+    padding: 25px;
+    background-color: hsl(0, 0%, 95%);
+}
+.face{
+    font-size: 1.5rem;
+}
+.calcu{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: rgb(124, 99, 147);
+}
+.ter{
+    font-size: 1.5rem;
+    color: red;
+}
+
+/*briefcase icon of portfolio*/
+.portfolioBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    align-items: center;
+}
+.box .icon{
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+}
+.icon {
+    border: solid lightblue;
+    background-color: lightblue;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    color: black;
+
+    display: flex;
+    justify-content: center;    
+
+    cursor: pointer;
+}
+
+#portfolio{
+    width: 40px;
+    color: black;
+}
+#portfolio:hover{
+    color: #333;
+}
+/*aside massage*/
+#message{
+    position: absolute;
+    bottom: 11vh;
+    right: calc(5vw + 70px + 20px);
+
+    width: 50vw;
+    padding: 4px;
+    padding-left: 15px;
+    border-radius: 15px;
+    background-color: #09c;
+    min-height: 60px;
+
+    visibility: hidden;
+    opacity: 1;
+    transition: opacity 5s ease-in-out;
+    background-color: #09c;
+    color: white;
+}
